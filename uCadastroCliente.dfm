@@ -1,5 +1,5 @@
 inherited frmCadastroClientes: TfrmCadastroClientes
-  Caption = 'frmCadastroClientes'
+  Caption = 'Clientes'
   ClientHeight = 425
   ClientWidth = 566
   OnCreate = FormCreate
@@ -10,17 +10,15 @@ inherited frmCadastroClientes: TfrmCadastroClientes
   inherited pnlConteudo: TPanel
     Width = 566
     Height = 425
-    ExplicitWidth = 896
-    ExplicitHeight = 567
+    ExplicitWidth = 562
+    ExplicitHeight = 424
     inherited pagConteudo: TPageControl
       Width = 564
       Height = 423
       ActivePage = tabCadastro
       OnChange = pagConteudoChange
-      ExplicitLeft = 2
-      ExplicitTop = 2
-      ExplicitWidth = 567
-      ExplicitHeight = 427
+      ExplicitWidth = 560
+      ExplicitHeight = 422
       inherited tabCadastro: TTabSheet
         ExplicitWidth = 556
         ExplicitHeight = 387
@@ -105,8 +103,8 @@ inherited frmCadastroClientes: TfrmCadastroClientes
           Top = 311
           Width = 556
           TabOrder = 9
-          ExplicitTop = 453
-          ExplicitWidth = 886
+          ExplicitTop = 310
+          ExplicitWidth = 552
           inherited btnSalvarCadastrar: TButton
             Left = 324
             OnClick = btnSalvarCadastrarClick
@@ -309,6 +307,8 @@ inherited frmCadastroClientes: TfrmCadastroClientes
           Top = 311
           Width = 556
           TabOrder = 9
+          ExplicitTop = 311
+          ExplicitWidth = 556
           inherited btnSalvarEditar: TButton
             Left = 324
             OnClick = btnSalvarEditarClick
@@ -526,6 +526,8 @@ inherited frmCadastroClientes: TfrmCadastroClientes
         inherited pnlBotoesExcluir: TPanel
           Top = 311
           Width = 556
+          ExplicitTop = 311
+          ExplicitWidth = 556
           inherited btnEditar: TButton
             Left = 324
             OnClick = btnEditarClick
@@ -549,60 +551,70 @@ inherited frmCadastroClientes: TfrmCadastroClientes
         DataType = ftInteger
         Direction = pdReturnValue
         Precision = 10
+        Value = Null
       end
       item
         Name = '@CGC_CPF_CLIENTE'
         Attributes = [paNullable]
         DataType = ftString
         Size = 11
+        Value = Null
       end
       item
         Name = '@NOME'
         Attributes = [paNullable]
         DataType = ftString
         Size = 50
+        Value = Null
       end
       item
         Name = '@TELEFONE'
         Attributes = [paNullable]
         DataType = ftString
         Size = 11
+        Value = Null
       end
       item
         Name = '@ENDERECO'
         Attributes = [paNullable]
         DataType = ftString
         Size = 50
+        Value = Null
       end
       item
         Name = '@BAIRRO'
         Attributes = [paNullable]
         DataType = ftString
         Size = 30
+        Value = Null
       end
       item
         Name = '@COMPLEMENTO'
         Attributes = [paNullable]
         DataType = ftString
         Size = 15
+        Value = Null
       end
       item
         Name = '@EMAIL'
         Attributes = [paNullable]
         DataType = ftString
         Size = 50
+        Value = Null
       end
       item
         Name = '@CODIGO_CIDADE'
         Attributes = [paNullable]
         DataType = ftInteger
         Precision = 10
+        Value = Null
       end
       item
         Name = '@CEP'
         Attributes = [paNullable]
         DataType = ftBCD
         Precision = 18
+        Value = Null
       end
       item
         Name = '@STATUS'
@@ -610,6 +622,7 @@ inherited frmCadastroClientes: TfrmCadastroClientes
         DataType = ftInteger
         Direction = pdInputOutput
         Precision = 10
+        Value = Null
       end>
     Prepared = True
     Left = 205
@@ -621,7 +634,6 @@ inherited frmCadastroClientes: TfrmCadastroClientes
     Top = 168
   end
   object qryCliente: TADOQuery
-    Active = True
     Connection = dmCadastros.adoConexao
     CursorType = ctStatic
     Parameters = <>
@@ -643,7 +655,8 @@ inherited frmCadastroClientes: TfrmCadastroClientes
       '  FROM [sinqia].[dbo].[CLIENTES]'
       
         '  INNER JOIN [sinqia].[dbo].[CIDADES] ON CLIENTES.CODIGO_CIDADE ' +
-        '= CIDADES.CODIGO_CIDADE')
+        '= CIDADES.CODIGO_CIDADE'
+      'ORDER BY [CLIENTES].[Nome]')
     Left = 407
     Top = 192
     object qryClienteCodigo_Cliente: TIntegerField
@@ -714,12 +727,14 @@ inherited frmCadastroClientes: TfrmCadastroClientes
         DataType = ftInteger
         Direction = pdReturnValue
         Precision = 10
+        Value = Null
       end
       item
         Name = '@CODIGO_CLIENTE'
         Attributes = [paNullable]
         DataType = ftInteger
         Precision = 10
+        Value = Null
       end>
     Left = 285
     Top = 97
@@ -733,66 +748,77 @@ inherited frmCadastroClientes: TfrmCadastroClientes
         DataType = ftInteger
         Direction = pdReturnValue
         Precision = 10
+        Value = Null
       end
       item
         Name = '@CODIGO_CLIENTE'
         Attributes = [paNullable]
         DataType = ftInteger
         Precision = 10
+        Value = Null
       end
       item
         Name = '@CGC_CPF_CLIENTE'
         Attributes = [paNullable]
         DataType = ftString
         Size = 11
+        Value = Null
       end
       item
         Name = '@NOME'
         Attributes = [paNullable]
         DataType = ftString
         Size = 50
+        Value = Null
       end
       item
         Name = '@TELEFONE'
         Attributes = [paNullable]
         DataType = ftString
         Size = 11
+        Value = Null
       end
       item
         Name = '@ENDERECO'
         Attributes = [paNullable]
         DataType = ftString
         Size = 50
+        Value = Null
       end
       item
         Name = '@BAIRRO'
         Attributes = [paNullable]
         DataType = ftString
         Size = 30
+        Value = Null
       end
       item
         Name = '@COMPLEMENTO'
         Attributes = [paNullable]
         DataType = ftString
         Size = 15
+        Value = Null
       end
       item
         Name = '@EMAIL'
         Attributes = [paNullable]
         DataType = ftString
         Size = 50
+        Value = Null
       end
       item
         Name = '@CODIGO_CIDADE'
         Attributes = [paNullable]
         DataType = ftInteger
         Precision = 10
+        Value = Null
       end
       item
         Name = '@CEP'
         Attributes = [paNullable]
         DataType = ftBCD
         Precision = 18
+        Value = Null
       end
       item
         Name = '@STATUS'
@@ -800,6 +826,7 @@ inherited frmCadastroClientes: TfrmCadastroClientes
         DataType = ftInteger
         Direction = pdInputOutput
         Precision = 10
+        Value = Null
       end>
     Left = 413
     Top = 89

@@ -634,6 +634,7 @@ inherited frmCadastroClientes: TfrmCadastroClientes
     Top = 168
   end
   object qryCliente: TADOQuery
+    Active = True
     Connection = dmCadastros.adoConexao
     CursorType = ctStatic
     Parameters = <>
@@ -655,8 +656,7 @@ inherited frmCadastroClientes: TfrmCadastroClientes
       '  FROM [sinqia].[dbo].[CLIENTES]'
       
         '  INNER JOIN [sinqia].[dbo].[CIDADES] ON CLIENTES.CODIGO_CIDADE ' +
-        '= CIDADES.CODIGO_CIDADE'
-      'ORDER BY [CLIENTES].[Nome]')
+        '= CIDADES.CODIGO_CIDADE')
     Left = 407
     Top = 192
     object qryClienteCodigo_Cliente: TIntegerField

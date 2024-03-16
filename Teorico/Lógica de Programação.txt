@@ -1,0 +1,27 @@
+1. Monte um arquivo texto com um algoritmo, passo a passo, para troca de um pneu de carro que furou
+
+01.	Pare o carro em um local seguro.
+02.	Puxe o freio de mão do carro.
+03.	Localizar o triângulo para sinalização da via.
+04.	Posicionar o triângulo de forma visível aos usuários da via.
+05.	Localizar o estepe.
+06.	Pegar o estepe.
+07.	Localizar o macaco.
+08.	Pegar o macaco.
+09.	Localizar a chave de roda.
+10.	Pegar a chave de roda.
+11.	Posicionar o macaco para elevar o lado do pneu furado.
+12.	Com todas as rodas no chão, utilizar a chave de roda para afrouxar os parafusos da roda.
+13.	Subir o macaco até tirar completamente a roda com o pneu furado do chão.
+14.	Remover todos os parafusos da roda que está o pneu furado.
+15.	Retirar a roda com pneu furado.
+16.	Posicionar o estepe no local que estava o a roda com pneu furado.
+17.	Colocar os parafusos de forma a prender o estepe no cubo de roda.
+18.	Abaixar o macaco até todos os pneus estarem no chão.
+19.	Retirar o macaco.
+20.	Com auxílio da chave de rodas, apertar os parafusos do estepe.
+21.	Guardar a roda com pneu furado no compartimento do estepe.
+22.	Guardar o macaco no compartimento do macaco.
+23.	Guardar a chave de roda no compartimento da chave de roda.
+24.	Recolher o triângulo.
+25.	Guardar o triângulo no compartimento do triângulo.

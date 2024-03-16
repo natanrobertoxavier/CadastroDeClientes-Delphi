@@ -30,6 +30,16 @@ object frmPrincipal: TfrmPrincipal
           OnClick = Cidade1Click
         end
       end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Relatrios1: TMenuItem
+        Caption = 'Relat'#243'rios'
+        object Clientes2: TMenuItem
+          Caption = 'Clientes'
+          OnClick = Clientes2Click
+        end
+      end
     end
   end
 end

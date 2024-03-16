@@ -11,15 +11,15 @@ inherited frmCadastroCidade: TfrmCadastroCidade
   inherited pnlConteudo: TPanel
     Width = 541
     Height = 313
-    ExplicitWidth = 497
-    ExplicitHeight = 327
+    ExplicitWidth = 537
+    ExplicitHeight = 312
     inherited pagConteudo: TPageControl
       Width = 539
       Height = 311
-      ActivePage = tabCadastro
+      ActivePage = tabEditar
       OnChange = pagConteudoChange
-      ExplicitWidth = 495
-      ExplicitHeight = 325
+      ExplicitWidth = 535
+      ExplicitHeight = 310
       inherited tabCadastro: TTabSheet
         ExplicitWidth = 531
         ExplicitHeight = 275
@@ -62,8 +62,8 @@ inherited frmCadastroCidade: TfrmCadastroCidade
           Top = 199
           Width = 531
           TabOrder = 4
-          ExplicitTop = 213
-          ExplicitWidth = 487
+          ExplicitTop = 198
+          ExplicitWidth = 527
           inherited btnSalvarCadastrar: TButton
             Left = 293
             OnClick = btnSalvarCadastrarClick
@@ -166,10 +166,11 @@ inherited frmCadastroCidade: TfrmCadastroCidade
           Top = 199
           Width = 531
           TabOrder = 4
-          ExplicitTop = 606
-          ExplicitWidth = 934
+          ExplicitTop = 198
+          ExplicitWidth = 527
           inherited btnSalvarEditar: TButton
             Left = 293
+            OnClick = btnSalvarEditarClick
             ExplicitLeft = 293
           end
           inherited btnCancelarEditar: TButton
@@ -275,8 +276,8 @@ inherited frmCadastroCidade: TfrmCadastroCidade
         inherited pnlBotoesExcluir: TPanel
           Top = 199
           Width = 531
-          ExplicitTop = 606
-          ExplicitWidth = 934
+          ExplicitTop = 199
+          ExplicitWidth = 531
           inherited btnEditar: TButton
             Left = 293
             OnClick = btnEditarClick
@@ -342,30 +343,35 @@ inherited frmCadastroCidade: TfrmCadastroCidade
         DataType = ftInteger
         Direction = pdReturnValue
         Precision = 10
+        Value = Null
       end
       item
         Name = '@NOME'
         Attributes = [paNullable]
         DataType = ftString
         Size = 50
+        Value = Null
       end
       item
         Name = '@ESTADO'
         Attributes = [paNullable]
         DataType = ftString
         Size = 2
+        Value = Null
       end
       item
         Name = '@CEPINICIAL'
         Attributes = [paNullable]
         DataType = ftBCD
         Precision = 18
+        Value = Null
       end
       item
         Name = '@CEPFINAL'
         Attributes = [paNullable]
         DataType = ftBCD
         Precision = 18
+        Value = Null
       end
       item
         Name = '@STATUS'
@@ -373,6 +379,7 @@ inherited frmCadastroCidade: TfrmCadastroCidade
         DataType = ftInteger
         Direction = pdInputOutput
         Precision = 10
+        Value = Null
       end>
     Prepared = True
     Left = 205
@@ -387,36 +394,42 @@ inherited frmCadastroCidade: TfrmCadastroCidade
         DataType = ftInteger
         Direction = pdReturnValue
         Precision = 10
+        Value = Null
       end
       item
         Name = '@CODIGO_CIDADE'
         Attributes = [paNullable]
         DataType = ftInteger
         Precision = 10
+        Value = Null
       end
       item
         Name = '@NOME'
         Attributes = [paNullable]
         DataType = ftString
         Size = 50
+        Value = Null
       end
       item
         Name = '@ESTADO'
         Attributes = [paNullable]
         DataType = ftString
         Size = 2
+        Value = Null
       end
       item
         Name = '@CEPINICIAL'
         Attributes = [paNullable]
         DataType = ftBCD
         Precision = 18
+        Value = Null
       end
       item
         Name = '@CEPFINAL'
         Attributes = [paNullable]
         DataType = ftBCD
         Precision = 18
+        Value = Null
       end
       item
         Name = '@STATUS'
@@ -424,6 +437,7 @@ inherited frmCadastroCidade: TfrmCadastroCidade
         DataType = ftInteger
         Direction = pdInputOutput
         Precision = 10
+        Value = Null
       end>
     Left = 437
     Top = 41
@@ -437,12 +451,14 @@ inherited frmCadastroCidade: TfrmCadastroCidade
         DataType = ftInteger
         Direction = pdReturnValue
         Precision = 10
+        Value = Null
       end
       item
         Name = '@CODIGO_CIDADE'
         Attributes = [paNullable]
         DataType = ftInteger
         Precision = 10
+        Value = Null
       end
       item
         Name = '@STATUS'
@@ -450,6 +466,7 @@ inherited frmCadastroCidade: TfrmCadastroCidade
         DataType = ftInteger
         Direction = pdInputOutput
         Precision = 10
+        Value = Null
       end>
     Left = 293
     Top = 81

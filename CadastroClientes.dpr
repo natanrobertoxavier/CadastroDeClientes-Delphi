@@ -8,7 +8,8 @@ uses
   uPesquisaPadrao in 'uPesquisaPadrao.pas' {frmPesquisaPadrao},
   uPesquisaCidade in 'uPesquisaCidade.pas' {frmPesquisaCidade},
   uCadastroCliente in 'uCadastroCliente.pas' {frmCadastroClientes},
-  uPrincipal in 'uPrincipal.pas' {frmPrincipal};
+  uPrincipal in 'uPrincipal.pas' {frmPrincipal},
+  uRelatorioCliente in 'uRelatorioCliente.pas' {frmRelatorioCliente};
 
 {$R *.res}
 
@@ -22,5 +23,6 @@ begin
   Application.CreateForm(TfrmPesquisaPadrao, frmPesquisaPadrao);
   Application.CreateForm(TfrmPesquisaCidade, frmPesquisaCidade);
   Application.CreateForm(TfrmCadastroClientes, frmCadastroClientes);
+  Application.CreateForm(TfrmRelatorioCliente, frmRelatorioCliente);
   Application.Run;
 end.

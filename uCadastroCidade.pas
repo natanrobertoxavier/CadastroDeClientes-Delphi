@@ -149,8 +149,8 @@ begin
         AtualizaDados;
         pagConteudo.ActivePageIndex := 2;
       end;
-      1: begin
-        ShowMessage('Cidade já cadastrada no banco de dados!');
+      2: begin
+        ShowMessage('Cidade não localizada para alteração!');
         txtNomeEditar.SetFocus;
       end
       else
